@@ -170,7 +170,7 @@ export default function Dashboard({ onShowFallAlert }: DashboardProps) {
       </div>
 
       {/* Cards de Informações Adicionais */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
@@ -186,7 +186,7 @@ export default function Dashboard({ onShowFallAlert }: DashboardProps) {
           <p className="text-xs text-gray-500 mt-2">Coordenadas: -23.5505, -46.6333</p>
         </div>
 
-        <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+        {/* <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
               <FontAwesomeIcon icon={faWalking} className="text-green-600" />
@@ -199,7 +199,7 @@ export default function Dashboard({ onShowFallAlert }: DashboardProps) {
           <p className="text-2xl font-bold text-gray-900">1.2 km</p>
           <p className="text-sm text-gray-600">Distância percorrida</p>
           <p className="text-xs text-gray-500 mt-2">Velocidade média: 3.5 km/h</p>
-        </div>
+        </div> */}
 
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
           <div className="flex items-center space-x-3 mb-4">
