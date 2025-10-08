@@ -67,24 +67,7 @@ export default function Dashboard({ onShowFallAlert }: DashboardProps) {
       {/* Cards de Monitoramento */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         {/* Card Temperatura */}
-        <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 card-hover">
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-xl flex items-center justify-center">
-              <FontAwesomeIcon icon={faThermometerHalf} className="text-white text-lg" />
-            </div>
-            <div className="text-right">
-              <p className="text-xs text-gray-500 uppercase tracking-wide">Temperatura</p>
-              <p className="text-2xl font-bold text-gray-900">{temperature}°C</p>
-            </div>
-          </div>
-          <div className="flex items-center justify-between">
-            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-              <FontAwesomeIcon icon={faCheckCircle} className="mr-1" />
-              Normal
-            </span>
-            <span className="text-xs text-gray-500">Faixa: 36-37°C</span>
-          </div>
-        </div>
+       
 
         {/* Card Batimentos */}
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 card-hover">
@@ -149,15 +132,7 @@ export default function Dashboard({ onShowFallAlert }: DashboardProps) {
 
       {/* Gráficos em Tempo Real */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-        <RealtimeChart 
-          title="Temperatura em Tempo Real"
-          color="rgb(239, 68, 68)"
-          backgroundColor="rgba(239, 68, 68, 0.1)"
-          dataGenerator={() => Number((36 + Math.random() * 1.5).toFixed(1))}
-          yMin={35}
-          yMax={38}
-          unit="°C"
-        />
+     
         <RealtimeChart 
           title="Batimentos em Tempo Real"
           color="rgb(236, 72, 153)"

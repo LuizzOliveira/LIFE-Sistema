@@ -96,28 +96,8 @@ export default function History() {
 
       {/* Estatísticas Resumidas */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-        <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
-              <FontAwesomeIcon icon={faThermometerHalf} className="text-red-600" />
-            </div>
-            <span className="text-xs bg-red-50 text-red-600 px-2 py-1 rounded-full">Temperatura</span>
-          </div>
-          <div className="space-y-2">
-            <div className="flex justify-between items-center">
-              <span className="text-sm text-gray-600">Média:</span>
-              <span className="font-bold text-gray-900">36.4°C</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-sm text-gray-600">Máxima:</span>
-              <span className="font-bold text-red-600">37.2°C</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-sm text-gray-600">Mínima:</span>
-              <span className="font-bold text-blue-600">35.8°C</span>
-            </div>
-          </div>
-        </div>
+        
+          
 
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
           <div className="flex items-center justify-between mb-4">
@@ -191,12 +171,7 @@ export default function History() {
 
       {/* Gráficos Detalhados */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-          <h3 className="text-lg font-bold text-gray-900 mb-6">Histórico de Temperatura</h3>
-          <div className="chart-container">
-            <Line data={getChartData('temp')} options={options} />
-          </div>
-        </div>
+        
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
           <h3 className="text-lg font-bold text-gray-900 mb-6">Histórico de Batimentos</h3>
           <div className="chart-container">
